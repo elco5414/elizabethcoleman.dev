@@ -1,2 +1,2 @@
 # elizabethcoleman.dev
-Personal Website 
+welcome to my personal website 
