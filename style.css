@@ -1,206 +1,24 @@
-:root {
-    --cream: #f5f0e8;
-    --parchment: #ede5d0;
-    --ink: #1e1a14;
-    --warm-gray: #7a7060;
-    --rust: #9b3a2b;
-    --rust-light: #c2523f;
-    --gold: #b8922a;
-    --border: #c9bda8;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    background-color: var(--parchment);
-    background-image: repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 28px,
-        rgba(180, 160, 120, 0.12) 28px,
-        rgba(180, 160, 120, 0.12) 29px
-    );
-    min-height: 100%;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    margin-bottom: 2cm;
 }
 
 body {
     font-family: "Lora", Georgia, serif;
     font-size: 1.1rem;
-    line-height: 1.85;
-    color: var(--ink);
-    background: transparent;
-
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 3.5rem 2.5rem 5rem;
-
-    /* Subtle page-shadow effect */
-    position: relative;
+    color: #1e1a14;
+    background-color: #ede5d0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
-
-body::before,
-body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 60px;
-    pointer-events: none;
-    z-index: 0;
-}
-body::before {
-    left: 0;
-    background: linear-gradient(
-        to right,
-        rgba(120, 100, 60, 0.18),
-        transparent
-    );
-}
-body::after {
-    right: 0;
-    background: linear-gradient(to left, rgba(120, 100, 60, 0.18), transparent);
-}
-
-/* ── Heading ── */
 h1 {
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: clamp(2.2rem, 6vw, 3.4rem);
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-
-    /* Decorative rule above */
-    padding-top: 1.4rem;
-    margin-bottom: 2rem;
-    position: relative;
-}
-
-h1::before {
-    content: "";
-    display: block;
-    width: 56px;
-    height: 3px;
-    background: var(--rust);
-    margin-bottom: 1rem;
-}
-
-h1::after {
-    content: "— a recommendation";
-    display: block;
-    font-family: "Lora", serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 0.95rem;
-    color: var(--warm-gray);
-    letter-spacing: 0.04em;
-    margin-top: 0.4rem;
-}
-
-/* ── Body Paragraph ── */
-p {
-    margin-bottom: 1.6rem;
-    color: var(--ink);
-    font-size: 1.08rem;
-    position: relative;
-    z-index: 1;
-}
-
-/* Drop cap on first letter */
-p::first-letter {
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 3.4em;
-    font-weight: 700;
-    line-height: 0.78;
-    float: left;
-    margin-right: 0.1em;
-    margin-top: 0.08em;
-    color: var(--rust);
-}
-
-/* ── Strong / Book Title ── */
-strong {
-    font-family: "Playfair Display", Georgia, serif;
-    font-style: italic;
-    font-weight: 700;
-    color: var(--rust);
-    font-size: 1.08em;
-}
-
-/* ── Link ── */
-a {
-    color: var(--rust-light);
-    text-decoration: underline;
-    text-decoration-color: var(--border);
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
-    transition:
-        color 0.2s,
-        text-decoration-color 0.2s;
-}
-
-a:hover,
-a:focus {
-    color: var(--gold);
-    text-decoration-color: var(--gold);
-    outline: none;
-}
-
-a:focus-visible {
-    outline: 2px solid var(--rust);
-    outline-offset: 3px;
-    border-radius: 2px;
-}
-
-/* ── Image ── */
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 2.4rem auto 0;
-    border-radius: 2px;
-
-    /* Stacked-book shadow effect */
-    box-shadow:
-        4px 4px 0px var(--border),
-        8px 8px 0px rgba(150, 130, 90, 0.3),
-        0 16px 48px rgba(60, 40, 10, 0.22);
-
-    /* Tiny rotation for that "placed on a desk" feel */
-    transform: rotate(-0.8deg);
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
-
-    position: relative;
-    z-index: 1;
-}
-
-img:hover {
-    transform: rotate(0deg) scale(1.012);
-    box-shadow:
-        2px 2px 0px var(--border),
-        6px 6px 0px rgba(150, 130, 90, 0.2),
-        0 24px 64px rgba(60, 40, 10, 0.28);
-}
-
-/* ── Decorative footer rule ── */
-body > img::after {
-    content: "✦";
-}
-
-@media (max-width: 520px) {
-    body {
-        padding: 2rem 1.4rem 3.5rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
+    margin-top: 2cm;
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
