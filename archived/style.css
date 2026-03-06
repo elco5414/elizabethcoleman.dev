@@ -1,0 +1,130 @@
+/*
+my color scheme:
+the really light yellow green: EEE8C7
+the slighly darker yellow green: D3C788
+the even darker green: 9A9B7A
+the salmon, kind of orange: D39B85
+the rose one, pink and dark: B3797E
+*/
+
+/* main scrolling page elements */
+body {
+  background-color: #EEE8C7;
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;3
+}
+.home {
+  display: flex;
+  min-height: 100vh; 
+  position: relative;
+}
+
+.home-content {
+  flex: 1;
+  display: flex;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.text-block {
+  max-width: 500px;
+}
+
+.text-block h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text-block p {
+  font-size: 1.25rem;
+}
+
+.patternImage {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50%; 
+  object-fit: cover;
+  z-index: 0;
+}
+
+.projects{
+  padding: 0;
+  margin:0;
+  color: #9A9B7A;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+/* ----- contact section elements ------*/
+.contact {
+  padding: 50px 0 100px 0;
+  margin: 0;
+  background-color: #D3C788;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.contact-links {
+  display: flex; 
+  gap: 30px; 
+  margin-top: 20px;
+}
+
+.contact-item {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+  color: #B3797E;
+}
+
+/* ------- my nav bar elements -------*/
+nav {
+    background-color: #D3C788;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+}
+
+.logo {
+    width: 100px; 
+    height: auto;
+    vertical-align: middle;
+}
+
+/* nav bar example from: https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D3C788;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #B3797E;
+  font-weight: bold; 
+}
+
