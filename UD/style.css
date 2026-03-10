@@ -1,0 +1,56 @@
+body {
+    background-color: whitesmoke;
+    color: #333333;
+    font:
+        1em / 1.4 "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: pink;
+    text-align: center;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 0;
+    color: pink;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    color: black;
+    margin: 0.5em 0;
+}
+
+ol {
+    border: 2px solid blueviolet;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+ul {
+    border: 2px solid purple;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+dl {
+    color: black;
+    margin: 0.5em 0;
+}
+
+dt {
+    font-weight: bold;
+    color: blueviolet;
+}
